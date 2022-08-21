@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>LOFI_MUSIC</title>
+  </head>
+  <body style="background-color: #eeb4b1" ;>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <img
+      src="back.jpeg"
+      alt="Girl in a jacket"
+      width="600"
+      height="350"
+      class="top"
+      style="right: -350px; top: -30px; position: relative"
+      ;
+    />
+    <div id="all">
+      <div class="container" style="margin-left: 8px; margin-right: 400px">
+
+        <!-- first image-song -->
+        <div id="img_but_1" >
+          
+          <img id="img_1" class="img" src="rain_1.jpg" width="350" height="250"  />
+          <div id="curve">
+          <button
+            onclick="playAudio_1()"
+            class="play"
+            id="btn1"
+            width="50"
+            height="50"
+            style="background: none; border: none ;display: block ; "
+            ;
+          >
+            <ion-icon name="play-circle-outline"></ion-icon>
+          </button>
+          <button
+            onclick="pauseAudio_1()"
+            class="pause"
+            id="btn2"
+            width="50"
+            height="50"
+            style="background: none; border: none; display:none";
+          >
+            <ion-icon name="pause-circle-outline"></ion-icon>
+          </button>
+          <p id="song_name"> Rain </p>
+          <audio id="audio_1" loop>
+            <source src="mixkit-forest-rain-loop-1225.wav" type="audio/mp4">
+          </audio>
+          <input id="vol-control"type="range" min="0" max="100" step="1" oninput="SetVolume_1(this.value)" onchange="SetVolume(this.value)"> </input>
+        </div>
+
+
+        </div>
+
+        <!-- second image song -->
+        <div id="img_but">
+          <img class="img" id="img_2" src="forest_2.jpg" width="350" height="250" />
+          <div id="curve">
+          <button
+            onclick="playAudio_2()"
+            class="play"
+            id="btn3"
+            width="50"
+            height="50"
+            style="background: none; border: none ;display: block " 
+            ;
+          >
+            <ion-icon name="play-circle-outline"></ion-icon>
+          </button>
+          <button
+            onclick="pauseAudio_2()"
+            class="pause"
+            id="btn4"
+            width="50"
+            height="50"
+            style="background: none; border: none; display:none";
+          >
+            <ion-icon name="pause-circle-outline"></ion-icon>
+          </button>
+          <p id="song_name"> Forest </p>
+          <audio id="audio_2" loop>
+            <source src="birds_forest.mp3" type="audio/mp4">
+        </audio>
+          <input id="vol-control"type="range" min="0" max="100" step="1" oninput="SetVolume_2(this.value)" onchange="SetVolume(this.value)"> </input>
+        </div>
+        </div>
+
+        <!-- third image song -->
+        <div id="img_but">
+          <img class="img" id="img_3" src="river_3.jpg" width="350" height="250" />
+          <div id="curve">
+          <button
+            onclick="playAudio_3()"
+            class="play"
+            id="btn5"
+            width="50"
+            height="50"
+            style="background: none; border: none ;display: block " 
+            ;
+          >
+            <ion-icon name="play-circle-outline"></ion-icon>
+          </button>
+          <button
+            onclick="pauseAudio_3()"
+            class="pause"
+            id="btn6"
+            width="50"
+            height="50"
+            style="background: none; border: none; display:none";
+          >
+            <ion-icon name="pause-circle-outline"></ion-icon>
+          </button>
+          <p id="song_name"> River </p>
+          <audio id="audio_3" loop>
+            <source src="river.mp3" type="audio/mp4">
+        </audio>
+          <input id="vol-control"type="range" min="0" max="100" step="1" oninput="SetVolume_3(this.value)" onchange="SetVolume(this.value)"> </input>
+        </div>
+        </div>
+
+        <!-- four image song -->
+        <div id="img_but">
+          <img class="img" id="img_4" src="lightning_4.jpg" width="350" height="250" />
+          <div id="curve">
+          <button
+            onclick="playAudio_4()"
+            class="play"
+            id="btn7"
+            width="50"
+            height="50"
+            style="background: none; border: none ;display: block " 
+            ;
+          >
+            <ion-icon name="play-circle-outline"></ion-icon>
+          </button>
+          <button
+            onclick="pauseAudio_4()"
+            class="pause"
+            id="btn8"
+            width="50"
+            height="50"
+            style="background: none; border: none; display:none";
+          >
+            <ion-icon name="pause-circle-outline"></ion-icon>
+          </button>
+          <p id="song_name"> Lightning </p>
+          <audio id="audio_4" loop>
+            <source src="Lightning.mp3" type="audio/mp4">
+        </audio>
+          <input id="vol-control"type="range" min="0" max="100" step="1" oninput="SetVolume_4(this.value)" onchange="SetVolume(this.value)"> </input>
+        </div>
+        </div>
+
+        <!-- five image song -->
+        <div id="img_but">
+          <img class="img" id="img_5" src="fire_5.jpg" width="350" height="250" />
+          <div id="curve">
+          <button
+            onclick="playAudio_5()"
+            class="play"
+            id="btn9"
+            width="50"
+            height="50"
+            style="background: none; border: none ;display: block " 
+            ;
+          >
+            <ion-icon name="play-circle-outline"></ion-icon>
+          </button>
+          <button
+            onclick="pauseAudio_5()"
+            class="pause"
+            id="btn10"
+            width="50"
+            height="50"
+            style="background: none; border: none; display:none";
+          >
+            <ion-icon name="pause-circle-outline"></ion-icon>
+          </button>
+          <p id="song_name"> Fire </p>
+          <audio id="audio_5" loop>
+            <source src="fire.mp3" type="audio/mp4">
+        </audio>
+          <input id="vol-control"type="range" min="0" max="100" step="1" oninput="SetVolume_5(this.value)" onchange="SetVolume(this.value)"> </input>
+        </div>
+        </div>
+
+
+         <!-- six image song -->
+         <div id="img_but">
+          <img class="img" id="img_6" src="wind.jpg" width="350" height="250" />
+          <div id="curve">
+          <button
+            onclick="playAudio_6()"
+            class="play"
+            id="btn11"
+            width="50"
+            height="50"
+            style="background: none; border: none ;display: block " 
+            ;
+          >
+            <ion-icon name="play-circle-outline"></ion-icon>
+          </button>
+          <button
+            onclick="pauseAudio_6()"
+            class="pause"
+            id="btn12"
+            width="50"
+            height="50"
+            style="background: none; border: none; display:none";
+          >
+            <ion-icon name="pause-circle-outline"></ion-icon>
+          </button>
+          <p id="song_name"> Wind </p>
+          <audio id="audio_6" loop>
+            <source src="wind.mp3" type="audio/mp4">
+        </audio>
+          <input id="vol-control"type="range" min="0" max="100" step="1" oninput="SetVolume_6(this.value)" onchange="SetVolume(this.value)"> </input>
+        </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>

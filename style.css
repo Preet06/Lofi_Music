@@ -1,0 +1,56 @@
+.container {
+  display: grid;
+  grid-template-rows: 400px 400px 400px;
+  grid-template-columns: 400px 400px 400px;
+  row-gap: -200px;
+  column-gap: -200px;
+}
+
+.img {
+  position: relative;
+  top: -50px;
+  right: -100px;
+}
+.button {
+  background: none;
+  border: none;
+}
+.play {
+  font-size: 60px;
+  position: relative;
+  top: 13px;
+  right: 10px;
+}
+
+.pause {
+  font-size: 60px;
+  position: relative;
+  top: 13px;
+  right: 10px;
+}
+
+#vol-control {
+  width: 250px;
+  height: 50px;
+  position: relative;
+  top: -160px;
+  right: -75px;
+}
+
+#curve {
+  border-radius: 25px;
+  background: #bcdcd7;
+  padding: 20px;
+  width: 315px;
+  height: 60px;
+  position: relative;
+  top: -50px;
+  right: -95px;
+}
+
+#song_name {
+  font-size: 35px;
+  position: relative;
+  top: -133px;
+  right: 1px;
+}
