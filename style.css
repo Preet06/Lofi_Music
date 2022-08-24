@@ -54,3 +54,14 @@
   top: -133px;
   right: 1px;
 }
+
+#profile {
+  position: relative;
+  top: 150px;
+  width: 10050px;
+  left: -20px;
+}
+#link {
+  position: relative;
+  top: 150px;
+}
